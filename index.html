@@ -11,9 +11,15 @@
         <h1>Lämpötilamuunnin</h1>
             <select>
                 <option value="celsiustofahrenheit">Celsius -> Fahrenheit</option>
+                <option value="celsiustokelvin">Celsius -> Kelvin</option>
                 <option value="fahrenheittocelsius">Fahrenheit -> Celsius</option>
+                <option value="fahrenheittokelvin">Fahrenheit -> Kelvin</option>
+                <option value="kelvintocelsius">Kelvin -> Celsius</option>
+                <option value="kelvintofahrenheit">Kelvin -> Fahrenheit</option>
             </select><br><br>
-            <input type="text" id="arvo" value=""><button>Muunna</button>
+            <input type="number" placeholder="Syötä lämpötila" id="arvo">
+            <p>=  <span id="output"></span></p>
 
         <script src=skriptit.js></script>        
     </body>
+</html>

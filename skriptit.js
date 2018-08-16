@@ -1,29 +1,29 @@
-function c-to-f{
+function c2f{
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function c-to-k{
+function c2k{
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function f-to-c{
+function f2c{
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function f-to-k{
+function f2k{
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function k-to-c{
+function k2c{
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function k-to-f{
+function k2f{
 var lampo = document.getElementById('arvo').value;    
 
 }
