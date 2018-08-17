@@ -1,29 +1,36 @@
-function c2f{
+function tempConv(temp)
+{
+    var valinta = document.getElementById('valinta').value;
+    console.log(valinta);
+}
+
+function c2f(){
+    if document.getElementById('valinta').
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function c2k{
+function c2k(){
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function f2c{
+function f2c(){
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function f2k{
+function f2k(){
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function k2c{
+function k2c(){
 var lampo = document.getElementById('arvo').value;
 
 }
 
-function k2f{
+function k2f(){
 var lampo = document.getElementById('arvo').value;    
 
 }
