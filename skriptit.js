@@ -1,13 +1,26 @@
 function tempConv(temp)
 {
     var valinta = document.getElementById('valinta').value;
+    var tulos = 0;
+
     console.log(valinta);
+    
+    switch(valinta) {
+        case "celsiustofahrenheit":
+            tulos = c2f(temp);
+            break;
+
+        default:
+            tulos = "jotain muuta";
+    }
+
+    console.log(tulos);
+    document.getElementById('output').innerHTML = tulos;
 }
 
-function c2f(){
-    if document.getElementById('valinta').
-var lampo = document.getElementById('arvo').value;
 
+function c2f(c){
+    return (c*1.8)+32;
 }
 
 function c2k(){
