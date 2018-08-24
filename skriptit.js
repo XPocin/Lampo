@@ -10,12 +10,29 @@ function tempConv(temp)
             tulos = c2f(temp);
             break;
 
-        default:
-            tulos = "jotain muuta";
+        case "celsiustokelvin":
+            tulos = c2k(temp);
+            break;
+
+        case "fahrenheittocelsius":
+            tulos = f2c(temp);
+            break;
+
+        case "fahrenheittokelvin":
+            tulos = f2k(temp);
+            break;
+
+        case "kelvintocelsius":
+            tulos = k2c(temp);
+            break;
+
+        case "kelvintofahrenheit":
+            tulos = k2f(temp);
+            break;
     }
 
     console.log(tulos);
-    document.getElementById('output').innerHTML = tulos;
+    document.getElementById('output').innerHTML = tulos.toFixed(2);
 }
 
 
@@ -23,31 +40,22 @@ function c2f(c){
     return (c*1.8)+32;
 }
 
-function c2k(){
-var lampo = document.getElementById('arvo').value;
-
+function c2k(c){
+    return (c*1)+273.15;
 }
 
-function f2c(){
-var lampo = document.getElementById('arvo').value;
-
+function f2c(c){
+    return (c-32)/1.8;
 }
 
-function f2k(){
-var lampo = document.getElementById('arvo').value;
-
+function f2k(c){
+    return ((c-32)/1.8)+273.15;
 }
 
-function k2c(){
-var lampo = document.getElementById('arvo').value;
-
+function k2c(c){
+    return c-273.15;
 }
 
-function k2f(){
-var lampo = document.getElementById('arvo').value;    
-
+function k2f(c){
+    return ((c-273.15)*1.8)+32;
 }
-// 1 fahrenheit = -17,22222 celsius //
-// 1 celsius = 33,8 fahrenheit //
-// 1 kelvin = -272,15 celsius  //
-// 1 celsius = -457,87 fahrenheit

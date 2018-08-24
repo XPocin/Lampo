@@ -1,2 +1,0 @@
-# Lampo
-is roject
